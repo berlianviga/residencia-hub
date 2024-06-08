@@ -1,0 +1,251 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+*{
+    font-family: "Montserrat", sans-serif;
+}
+
+/*CSS VARIABLES*/
+:root{
+    --primary-color: #0097a7ff;
+    --link-color: #506690;
+    --btn-hover-color: rgb(0, 102, 113);
+    --lg-heading: #161c2d;
+    --text-content: #869ab8;
+    --fixed-header-height: 7rem;
+    --c-white: #fff;
+    --c-black: #000;
+    --c-titam-white: #f1eeff;
+    --c-cold-purple: #a69fd6;
+    --c-indigo: #6558d3;
+    --c-governor: #4133B7;
+}
+
+.navbar-brand{
+    font-size: 27px;
+    color: var(--primary-color) !important;
+    font-weight: 800;
+}
+
+#light-title{
+    color: rgb(65, 202, 218);
+}
+
+
+.navbar-nav .nav-link {
+    font-size: 16.5 px;
+    color: var(--link-color) !important;
+}
+
+.navbar-nav .nav-link.active {
+    color: var(--primary-color) !important; 
+}
+
+.navbar-nav .nav-link.active{
+    color: var(--primary-color) !important;
+}
+
+.btn-contact{
+    background-color: var(--primary-color) !important;
+    color: #fff !important;
+    font-size: 16px;
+    letter-spacing: 1px;
+    transition: 0.4s;
+}
+
+.btn-contact:hover{
+    transform: translateY(-3px);
+    background-color: var(--btn-hover-color);
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.footer{
+    background-color: var(--primary-color);
+    padding: 10px 0;
+    text-align: center;
+    color: white;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.about, .contact{
+    margin-top: 4%;
+    background-size: cover;
+    background-position: center;
+}
+
+.contact-wrapper{
+    background: #fff;
+}
+
+.dbox{
+    width: 100%;
+    margin-bottom: 25px;
+    padding: 0 20px;
+}
+
+.dbox p{
+    margin-bottom: 0;
+}
+
+.dbox p span {
+    font-weight: 500;
+    color: black;
+}
+
+.dbox .icon{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: var(--primary-color);
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.dbox .icon span{
+    font-size: 20px;
+    color: #fff;
+}
+
+ 
+#content-title{
+    height: 170px;
+    background-image: url(../img/content-title.jpg);
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);
+    justify-content: center;
+    align-items: center;
+    color: var(--c-white);
+    background-size: cover;
+    background-position: center;
+    margin-top: 4%;
+}
+
+.navbar-shadow {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+}
+ 
+/*HOME TYPE STYLE*/
+.home_type{
+    padding-left: 5% !important;
+    padding-right: 5% !important;
+}
+
+.home_type_item{
+    box-shadow: 0 0.5rem 1.5rem rgba(22, 28, 45, 0.1);
+    border: 1px solid #eee !important;
+}
+
+.home_type_item i{
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+/*DETAIL RUMAH STYLE*/
+.home_detail_type{
+    padding-left: 0 !important;
+}
+
+/*BLOG PAGE STYLE*/
+.description-blog{
+    font-size: 12px;
+    font-weight: 400px !important;
+    text-align: justify !important;
+}
+
+.btn-readmore {
+    background-color: var(--primary-color);
+}
+
+.text-latest-post{
+    font-size: 17px !important;
+    font-weight: 500;
+}
+
+.latest-blog-content{
+    cursor: pointer;
+}
+.latest-blog-items{
+    font-size: 12px !important;
+    color: var(--text-content);
+    text-decoration: none;
+}
+
+#cardDetailBlog{
+    height: 1000px;
+}
+
+#cardDetailImg { 
+    max-width: 60%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 768px){
+    .dbox{
+        margin-bottom: 0;
+        padding: 0;
+    }
+    .tipe_website_view{
+        display: flex !important;
+    }
+    .tipe_mobile_view{
+        display: none !important;
+    }
+    #cardDetailImg{
+        max-width: 500px;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 768px){
+    #home-content-img{
+        margin-top: 10px;
+    }
+    .btn-wrapper{
+        margin: 2rem 0.3rem;
+    }
+
+    #contact{
+        min-height: 20vh !important;
+    }
+    .title-contact{
+        padding-top: 22% !important;
+    }
+
+    #about{
+        min-height: 20vh !important;
+    }
+    .title-about{
+        padding-top: 22% !important;
+    }
+    .tipe_website_view{
+        display: none !important;
+    }
+    .tipe_mobile_view{
+        display: flex !important;
+    }
+    #cardDetailImg{
+        max-width: 300px;
+        height: auto;
+    }
+     
+}
+
+@media screen and (max-width: 991px){
+    .tipe_website_view{
+        display: none !important;
+    }
+    .tipe_mobile_view{
+        display: flex !important;
+    }
+    #cardDetailImg{
+        max-width: 300px;
+        height: auto;
+    }
+}
