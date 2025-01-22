@@ -17,8 +17,8 @@ Website ini merupakan proyek dari course Web Development My Skill yang memuat in
 - JavaScript
 
 ## 🚀 Cara Menjalankan Proyek
-1. Clone Repository
+1. **Clone Repository** pada komputer Anda 
  ```bash
    git clone https://github.com/berlianviga/residencia-hub
-
+```
 2. Buka folder yang telah di clone pada VS Code dan jalankan di Server Lokal (menggunakan ekstensi VS Code seperti Live Server)
